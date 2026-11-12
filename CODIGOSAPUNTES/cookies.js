@@ -1,14 +1,16 @@
 // Escribir: nombre=valor; atributos separados por punto y coma
 document.cookie = 'tema=oscuro; max-age=31536000; path=/; SameSite=Lax';
 document.cookie = 'idioma=es-ES; max-age=31536000; path=/; SameSite=Lax';
+
 // Leer: una única cadena con TODAS las cookies accesibles
 console.log(document.cookie); // 'tema=oscuro; idioma=es-ES'
+
 // Borrar: la misma cookie con caducidad cero
 document.cookie = 'tema=; max-age=0; path=/';
 
 //Solo guarda texto. Si guardas un número, recuperas una cadena
-
 const preferencias = { tema: 'oscuro', idioma: 'es-ES', moneda: 'EUR', porPagina: 10 };
+
 // Guardar: objeto → texto JSON
 localStorage.setItem('preferencias', JSON.stringify(preferencias));
 // En Application → Local Storage verás: {"tema":"oscuro","idioma":"es-ES","moneda":"EUR","porPagina":10}

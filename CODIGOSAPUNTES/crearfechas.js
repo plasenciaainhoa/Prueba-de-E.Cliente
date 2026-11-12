@@ -1,3 +1,5 @@
+/*Fechas */
+
 const ahora = new Date(); // instante actual
 const fijo = new Date(2026, 9, 13, 8, 30); // 13 de octubre de 2026, 8:30 (¡mes 9 = octubre!)
 const iso = new Date('2026-10-13T08:30:00'); // desde texto ISO 8601, hora local

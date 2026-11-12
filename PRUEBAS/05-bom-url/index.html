@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UD3 · A6 · Radiografía del navegador</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="app.js" defer></script>
+</head>
+<body data-tema="claro">
+  <h1>UD3 · A6 · Radiografía del navegador y BOM</h1>
+  
+  <div id="saludo"></div>
+  
+  <section>
+    <h2>Panel de información del navegador</h2>
+    <div id="panel-bom"></div>
+  </section>
+
+  <section>
+    <h2>Navegación e historial</h2>
+    <p>Página actual: <span id="num-pagina">1</span> | Longitud del historial: <span id="historial-length">0</span></p>
+    <button id="btnSiguiente">Siguiente página</button>
+    <button id="btnAtras">Atrás (history.back)</button>
+    <button id="btnReplace">Usar location.replace</button>
+  </section>
+
+  <section>
+    <h2>Portapapeles y Compartir</h2>
+    <button id="btnCopiar" style="display: none;">Copiar URL</button>
+    <p id="mensaje-copia"></p>
+  </section>
+</body>
+</html>

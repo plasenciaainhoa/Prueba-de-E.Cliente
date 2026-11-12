@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UD3 · A9 · Almacenamiento</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    section { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 6px; }
+  </style>
+  <!-- Enlazamos almacen.js antes que app.js -->
+  <script src="almacen.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>UD3 · A9 · Guardar y recuperar</h1>
+
+  <section>
+    <h2>Contadores de visitas</h2>
+    <p id="visitasCookie">Cookie: cargando...</p>
+    <p id="visitasLocal">localStorage: cargando...</p>
+    <p id="visitasSession">sessionStorage: cargando...</p>
+  </section>
+
+  <section>
+    <h2>Estado de Preferencias y Evento Storage</h2>
+    <div id="salidaPreferencias"></div>
+    <p id="avisoStorage" style="font-weight: bold; color: darkblue;"></p>
+  </section>
+</body>
+</html>

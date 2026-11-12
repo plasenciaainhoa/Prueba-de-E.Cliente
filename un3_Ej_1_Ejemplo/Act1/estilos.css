@@ -1,0 +1,38 @@
+/* UD3 · Hoja de estilos mínima compartida por las soluciones.
+   Lo importante de la unidad es el JavaScript; esto solo hace legible el resultado. */
+:root {
+  --fondo: #ffffff;
+  --texto: #222222;
+  --acento: #2e74b5;
+  --borde: #d0d7de;
+  --suave: #f3f4f6;
+}
+[data-tema="oscuro"] {
+  --fondo: #1e1e1e;
+  --texto: #e6e6e6;
+  --acento: #7ab8ff;
+  --borde: #444c56;
+  --suave: #2a2a2a;
+}
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 1rem 1.5rem;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.4;
+}
+h1 { color: var(--acento); font-size: 1.4rem; }
+button { font: inherit; padding: 0.35rem 0.8rem; margin: 0.2rem; cursor: pointer; }
+table { border-collapse: collapse; margin: 0.5rem 0; }
+th, td { border: 1px solid var(--borde); padding: 0.3rem 0.6rem; text-align: left; }
+th { background: var(--suave); }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.2rem 1rem; }
+dt { font-weight: bold; }
+#mensaje { min-height: 1.5rem; color: var(--acento); font-weight: bold; }
+article { border: 1px solid var(--borde); border-radius: 0.5rem; padding: 0.8rem 1rem; margin: 0.5rem 0; }
+dialog { border: 1px solid var(--borde); border-radius: 0.5rem; padding: 1.2rem 1.5rem; background: var(--fondo); color: var(--texto); }
+dialog::backdrop { background: rgba(0, 0, 0, 0.55); }
+.aviso-consentimiento { position: fixed; bottom: 0; left: 0; right: 0; margin: 0; border-radius: 0; border-top: 3px solid var(--acento); }
+.aviso-consentimiento button { min-width: 7rem; }

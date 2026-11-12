@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preferencias del Proyecto</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="almacen.js" defer></script>
+  <script src="preferencias.js" defer></script>
+</head>
+<body data-tema="claro">
+
+  <!-- R5: Aviso de consentimiento (Banner fijo o modal inicial) -->
+  <dialog id="dialogoConsentimiento">
+    <h2>Aviso de Privacidad y Consentimiento</h2>
+    <p>Utilizamos almacenamiento local para guardar tus preferencias de navegación. Puedes aceptar o rechazar su persistencia según la normativa vigente.</p>
+    <div style="display: flex; gap: 10px; justify-content: flex-end;">
+      <button id="btnRechazar" style="flex:1;">Rechazar</button>
+      <button id="btnAceptar" style="flex:1; background: #0056b3; color: white;">Aceptar</button>
+    </div>
+  </dialog>
+
+  <h1>Preferencias de la Aplicación</h1>
+
+  <!-- Toast de estado (R6) -->
+  <p id="toast" role="status" style="min-height: 20px; font-weight: bold; color: green;"></p>
+
+  <!-- R1: Controles de preferencias -->
+  <form id="formPreferencias">
+    <label>
+      Tema:
+      <select id="selectTema">
+        <option value="claro">Claro</option>
+        <option value="oscuro">Oscuro</option>
+        <option value="sistema">Sistema</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>
+      Idioma:
+      <select id="selectIdioma">
+        <option value="es-ES">Español (es-ES)</option>
+        <option value="en-GB">Inglés (en-GB)</option>
+        <option value="de-DE">Alemán (de-DE)</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>
+      Moneda:
+      <select id="selectMoneda">
+        <option value="EUR">Euros (€)</option>
+        <option value="USD">Dólares ($)</option>
+        <option value="GBP">Libras (£)</option>
+      </select>
+    </label>
+    <br><br>
+
+    <label>
+      Elementos por página:
+      <select id="selectPorPagina">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+      </select>
+    </label>
+    <br><br>
+
+    <button type="submit" id="btnGuardar">Guardar Preferencias</button>
+    <button type="button" id="btnBorrar">Borrar mis datos (R6)</button>
+  </form>
+
+  <!-- R4: Vista previa localizada -->
+  <section style="margin-top: 30px; border-top: 1px solid #ccc; padding-top: 15px;">
+    <h2>Vista Previa</h2>
+    <p id="pvImporte"></p>
+    <p id="pvFecha"></p>
+    <p id="pvRelativo"></p>
+  </section>
+
+  <p><a href="index.html">Ir a la página de inicio</a></p>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body[data-tema="oscuro"] {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+body[data-tema="oscuro"] th, body[data-tema="oscuro"] td {
+  border-color: #444;
+}

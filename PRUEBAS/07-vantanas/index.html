@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UD3 · A8 · Ventana Principal</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body data-tema="claro">
+  <h1>UD3 · A8 · Ventanas que se hablan</h1>
+
+  <section>
+    <h2>Control de Ventana Emergente</h2>
+    <p>Estado de la vista previa: <strong id="estadoVentana">Cerrada</strong></p>
+    <button id="btnAbrir">Abrir vista previa</button>
+    <button id="btnEnfocar">Enfocar</button>
+    <button id="btnCerrar">Cerrar</button>
+  </section>
+
+  <section>
+    <h2>Comunicación (postMessage)</h2>
+    <button id="btnEnviar">Enviar Ficha</button>
+    <p id="estadoConfirmacion" style="font-style: italic; color: green;"></p>
+  </section>
+
+  <section>
+    <h2>Sincronización entre Pestañas (BroadcastChannel)</h2>
+    <button id="btnCambiarTema">Cambiar Tema (Claro / Oscuro)</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

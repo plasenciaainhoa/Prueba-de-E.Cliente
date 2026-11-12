@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UD3 · A7 · Diálogos</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>UD3 · A7 · Interacción con el usuario y Diálogos</h1>
+
+  <!-- Zona de mensajes tipo Toast -->
+  <p id="mensaje" role="status" class="toast"></p>
+
+  <!-- Botones de control -->
+  <div class="controles">
+    <button id="btnPrompt">Probar Diálogos (Prompt/Confirm/Alert)</button>
+    <button id="btnAnadir">Añadir elemento</button>
+    <button id="btnVaciar">Vaciar lista</button>
+  </div>
+
+  <!-- Contenedor / Lista -->
+  <section>
+    <h2>Elementos de la colección</h2>
+    <ul id="listaElementos">
+      <li>Elemento de ejemplo 1</li>
+      <li>Elemento de ejemplo 2</li>
+    </ul>
+  </section>
+
+  <!-- DIÁLOGO 1: Pedir nombre (con input requerido) -->
+  <dialog id="dialogoNombre">
+    <form method="dialog">
+      <h2>Añadir nuevo elemento</h2>
+      <label>
+        Nombre del elemento:
+        <input id="inputNombreElemento" type="text" required>
+      </label>
+      <div class="botones-dialogo">
+        <button value="cancelar">Cancelar</button>
+        <button value="ok">Aceptar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- DIÁLOGO 2: Confirmar vaciar lista -->
+  <dialog id="dialogoConfirmar">
+    <form method="dialog">
+      <h2>¿Vaciar lista completa?</h2>
+      <p>Esta acción eliminará todos los elementos y no se puede deshacer.</p>
+      <div class="botones-dialogo">
+        <button value="cancelar">Cancelar</button>
+        <button value="vaciar" class="peligro">Vaciar</button>
+      </div>
+    </form>
+  </dialog>
+
+</body>
+</html>

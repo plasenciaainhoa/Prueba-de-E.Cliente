@@ -1,0 +1,10 @@
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body[data-tema="oscuro"] {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}

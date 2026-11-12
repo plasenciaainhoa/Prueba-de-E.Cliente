@@ -1,3 +1,4 @@
+
 //Navegador
 alert('Guardado correctamente'); // informa; no devuelve nada
 const seguro = confirm('¿Eliminar el elemento?'); // true (Aceptar) o false (Cancelar)
@@ -5,7 +6,8 @@ const nombre = prompt('Nombre del elemento', 'Sin título'); // texto, '' o null
 
 
 //Abrir ventana modal que bloquea los otros elementos cuando salen
-<dialog /*id="confirmar"*/>
+/*
+<dialog id="confirmar">
     <h2>¿Eliminar el elemento?</h2>
     <p>Esta acción no se puede deshacer.</p>
     <form method="dialog">
@@ -14,6 +16,7 @@ const nombre = prompt('Nombre del elemento', 'Sin título'); // texto, '' o null
     </form>
 </dialog>
 <button id="borrar">Eliminar</button>
+*/
 
 const dialogo = document.getElementById('confirmar');
 document.getElementById('borrar').addEventListener('click', () => {
